@@ -1,0 +1,9 @@
+name: ZydoxHub
+main: me.drakonn.zydoxhub.ZydoxHub
+version: 1.0
+author: [Drakonn]
+commands:
+  sethub:
+    description: Set the Spawnpoint
+  reloadhub:
+    description: Reload the Plugin

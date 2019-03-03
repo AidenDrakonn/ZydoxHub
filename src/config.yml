@@ -1,0 +1,104 @@
+settings:
+  world: world
+  allowedcommands:
+   - msg
+   - r
+   - reply
+   - tell
+   - pm
+  potioneffects:
+    speed:
+      level: 5
+  messages:
+    paintballgunoncooldown: '&c&l(!)&c You cannot use the &lPaintball Gun&c for another &l %time% &cseconds.'
+    commandblocked: '&c&l(!)&c You can not use that command.'
+    nopermission: '&c&l(!)&c You do not have access to that command'
+    serveroffline: '&c&l(!)&c Can not connect to %server% because it is offline'
+    connecting: '&bConnecting to %server%....'
+
+
+spawnpoint:
+  world: world
+  x: 0
+  y: 80
+  z: 100
+  pitch: 100
+  yaw: 100
+
+gadgets:
+  paintballgun:
+    cooldown: 5
+    invslot: 6
+    item:
+      name: '&9&lPaintball Gun &8(Right Click)'
+      material: STICK
+      lore:
+        - '&fRight click to use'
+      enchanted: true
+  visibilitytoggler:
+    invslot: 2
+    showitem:
+      name: '&4&lToggle Player Visibility &8(Right Click)'
+      material: REDSTONE
+      lore:
+        - '&fShows all other players'
+        - '&fCurrent Status: &bhidden'
+      enchanted: true
+    hideitem:
+      name: '&4&lToggle Player Visibility &8(Right Click)'
+      material: TORCH
+      lore:
+        - '&fHides all other players'
+        - '&fCurrent Status: &bshown'
+      enchanted: true
+
+serverselector:
+  invslot: 4
+  item:
+    name: '&2&lServer Selector'
+    material: COMPASS
+    lore:
+    - '&fSelect a server to join'
+    enchanted: false
+  gui:
+    size: 27
+    name: Server Selector
+    fillitem:
+      name: ''
+      material: STAINED_GLASS_PANE:2
+      enchanted: false
+
+
+servers:
+  factions:
+    runcommand: true
+    command: 'say test player name %player% factions'
+    ip: '127.0.0.1'
+    port: 25565
+    invslot: 11
+    item:
+      name: '&1&lFactions'
+      material: DIAMOND_SWORD
+      lore:
+      - '&bA Unique faction experience with custom enchants'
+      - ''
+      - '&fFactions is currently %status%'
+      - ''
+      - '&fThere are &b%players%/200 &fplayers online'
+      enchanted: false
+  survival:
+    runcommand: true
+    command: 'say test player name %player% survival'
+    ip: '127.0.0.1'
+    port: 25565
+    invslot: 15
+    item:
+      name: '&a&lSurvival'
+      material: DIAMOND_SPADE
+      lore:
+      - '&bA Unique survival experience with custom weapons'
+      - ''
+      - '&fSurvival is currently %status%'
+      - ''
+      - '&fThere are &b%players%/250 &fplayers online'
+      enchanted: false
